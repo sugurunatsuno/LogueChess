@@ -43,10 +43,12 @@ namespace LogueChess.Runtime
             if (!markers.TryGetValue(u, out var rt)) return;
             float normalized = Mathf.Clamp01(u.CurrentGauge.Value / 100f);
             float width = lineRect.rect.width;
+            float height = lineRect.rect.height;
             // 左端を0、右端をwidthにマッピング
             
             if(rt == null) return;
-            rt.anchoredPosition = new Vector2(normalized * width, rt.anchoredPosition.y);
+            // rt.anchoredPosition = new Vector2(normalized * width, rt.anchoredPosition.y);
+            rt.anchoredPosition = new Vector2(rt.anchoredPosition.x, normalized * height);
         }
     }
 

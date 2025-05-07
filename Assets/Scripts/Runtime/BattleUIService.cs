@@ -180,7 +180,7 @@ namespace LogueChess.Runtime
 
         public void UpdateGaugeDisplay(Unit unit)
         {
-            // HUDSlot が ReactiveProperty で自動更新する想定なので不要
+            
         }
 
         public void InitializeUnits(IEnumerable<Unit> allUnits, IEnumerable<Unit> allies, IEnumerable<Unit> enemies)
@@ -188,9 +188,9 @@ namespace LogueChess.Runtime
             // ゲージバー
             gaugeBar.Initialize(allUnits);
             // 味方リスト
-            allyListUI.Populate(allies.ToList());
+            // allyListUI.Populate(allies.ToList());
             // 敵リスト
-            enemyListUI.Populate(enemies.ToList());
+            // enemyListUI.Populate(enemies.ToList());
         }
 
 

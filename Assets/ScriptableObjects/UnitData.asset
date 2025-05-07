@@ -21,7 +21,7 @@ MonoBehaviour:
   gaugeSpeed: 100
   resistances: []
   skills:
-  - {fileID: 11400000, guid: a44ec56df9f5d435d8a188a2bbd2a81e, type: 2}
+  - {fileID: 11400000, guid: 4c5ccfa0c74744b488db1f9b127380e2, type: 2}
   - {fileID: 11400000, guid: 61ce42c498de7438b9144b9379bc69cb, type: 2}
   - {fileID: 11400000, guid: 48e34e99519ee43bab6d9aad84e44942, type: 2}
   startingPerks: []
